@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Arvantis</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("w9PdoxY4gOtasj3w7");
+        })();
+      </script>
+</head>
+<body>
+    <link rel="stylesheet" href="css/style.css"> 
+    <header class="navbar">
+        <a href="index.html"><img src="../images/logotipo-marca.png" alt="Logotipo da marca Arvantis" class="logotipoArvantis"></a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#testemunhos">Testemunhos</a></li>
+            <li><a href="#contato" class="contact">Entre em contato conosco!</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" 
+                style="background-image:url(../images/imagemcarro1.png)"
+                alt="Imagem de um carro da Arvantis"
+                ></div>
+                <div class="swiper-slide"
+                style="background-image:url(../images/imagemcarro2.png)"
+                ></div>
+                <div class="swiper-slide"
+                style="background-image:url(../images/imagemcarro3.png)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section data-aos="fade-down" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Na <strong>Arvantis</strong>, somos apaixonados por desempenho e inovação. 
+        Fundada com a missão de revolucionar o setor automotivo, nossa marca oferece produtos de alta qualidade que aliam tecnologia de ponta e design arrojado.
+        Desde componentes de motor a acessórios sofisticados, a Arvantis é sinônimo de excelência em cada detalhe.</p>
+        <p>Nosso compromisso com a qualidade e a segurança dos nossos produtos faz com que nossos clientes confiem em nós para elevar suas 
+        experiências automotivas ao próximo nível. 
+        Seja para performance ou personalização, a Arvantis está aqui para garantir que cada jornada seja única e emocionante.</p>
+    </section>
+    <section id="servicos">
+        <div data-aos="fade-up" data-aos-delay="300" class="textoservico">
+            <h2>Serviços</h2>
+            <p>Descubra os principais serviços que oferecemos para melhorar sua experiência automotiva:</p>
+            <ul class="servicos-lista">
+                <li>&#8226; Manutenção de Veículos</li>
+                <li>&#8226; Instalação de Acessórios</li>
+                <li>&#8226; Consultoria em Performance</li>
+                <li>&#8226; Serviço de Pintura e Estética</li>
+                <li>&#8226; Diagnóstico Eletrônico</li>
+            </ul>
+        </div>
+        <img data-aos="zoom-in" src="../images/carrosmodelo.jpg" alt="Modelos de carro da Arvantis" class="carrosModelo">
+    </section>
+    <section id="testemunhos" data-aos="fade-up">
+        <h2>Depoimentos</h2>
+        <div class="testemunho-container" id="testemunho-container">
+            <!-- Os depoimentos serão inseridos aqui dinamicamente -->
+        </div>
+    </section>
+    <form id="contato" data-aos="zoom-in" data-aos-delay="500">
+        <h2>Entre em contato!</h2>
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Telefone" required>
+        <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    <footer>
+        <h3 class="copyright">&#169 Arvantis 2024. Todos os direitos reservados</h3>
+        <div id="others">
+            <a href="#">Termos de uso</a> <br>
+            <a href="#">Política de Privacidade</a>
+        </div>
+        <div id="socials">
+            <a href="#"><img src="../images/instagram_icon.png" alt="Instagram" class="logotipoInstagram"></a>
+            <a href="#"><img src="../images/x_logo.png" alt="X" class="logotipoX"></a>
+            <a href="#"><img src="../images/logotipo_linkedin.png" alt="LinkedIn" class="logotipoLinkedIn"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+        loop: true,
+        // Paginação
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        // Navegação
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/randomuser.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
